@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  id: 
+  spot_name: MyString
+  image_url: MyString
+  longtitude: 9.99
+  latitude: 9.99
+  detail: MyText
+  min_people: 
+  max_people: 
+  is_female: false
+  is_male: false
+  start_hour: 2017-10-11 12:58:58
+  end_hour: 2017-10-11 12:58:58
+
+two:
+  id: 
+  spot_name: MyString
+  image_url: MyString
+  longtitude: 9.99
+  latitude: 9.99
+  detail: MyText
+  min_people: 
+  max_people: 
+  is_female: false
+  is_male: false
+  start_hour: 2017-10-11 12:58:58
+  end_hour: 2017-10-11 12:58:58

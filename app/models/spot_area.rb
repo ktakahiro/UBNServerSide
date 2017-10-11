@@ -1,0 +1,2 @@
+class SpotArea < ApplicationRecord
+end
