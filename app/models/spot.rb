@@ -1,3 +1,4 @@
+# spot database
 class Spot < ApplicationRecord
   has_many :spot_areas, foreign_key: 'spot_id'
   has_many :areas, through: :spot_areas
