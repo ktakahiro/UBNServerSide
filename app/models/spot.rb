@@ -23,7 +23,8 @@ class Spot < ApplicationRecord
 
   def self.get_sub_spot(id)
     main_spot = Spot.joins(:spot_areas).joins(:areas).find(id)
-    Spot.joins(:spot_areas).joins(:areas).where('area_name' => main_spot.area_name).each do |spot|
+    Spot.joins(:spot_areas).joins(:areas).where('area_name' => main_spot.area_name)
+        .each do |spot|
       if distance(spot.latitude, spot.longitude, main_spot.latitude, main_spot.longitude) < 1.0
         @sub_spots += spot
       end
@@ -37,7 +38,6 @@ class Spot < ApplicationRecord
   # @param [Float] lat2
   # @param [Float] lng2
   # @return [Float] distance
-
   def distance(lat1, lng1, lat2, lng2)
     # convert to radian
     x1 = lat1.to_f * Math::PI / 180
