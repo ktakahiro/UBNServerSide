@@ -4,7 +4,7 @@ class CreateSpots < ActiveRecord::Migration[5.1]
 
       t.string :spot_name
       t.string :image_url
-      t.decimal :longtitude
+      t.decimal :longitude
       t.decimal :latitude
       t.text :detail
       t.integer :min_people
