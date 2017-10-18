@@ -1,7 +1,24 @@
 class SpotController < ApplicationController
   def index
-    @users = spot_params[:date]
-    render json: @users
+    @tags = ["tag1", "tag2"]
+    @spot = {
+      id: 1,
+      imagePath: "www.example.com",
+      spotName: "example",
+      tagList: @tags
+    }
+    @spot1 = {
+      id: 1,
+      imagePath: "www.example.com",
+      spotName: "example",
+      tagList: @tags
+    }
+    @spots = [@spot, @spot1]
+    @spotsJson = {
+      spotList: @spots,
+      spotNum: 2
+    }
+    render json: @spotsJson
   end
 
 
