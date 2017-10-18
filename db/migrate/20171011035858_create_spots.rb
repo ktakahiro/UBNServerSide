@@ -1,7 +1,6 @@
 class CreateSpots < ActiveRecord::Migration[5.1]
   def change
     create_table :spots do |t|
-
       t.string :spot_name
       t.string :image_url
       t.decimal :longitude
@@ -13,7 +12,6 @@ class CreateSpots < ActiveRecord::Migration[5.1]
       t.boolean :is_male
       t.time :start_hour
       t.time :end_hour
-
       t.timestamps
     end
   end

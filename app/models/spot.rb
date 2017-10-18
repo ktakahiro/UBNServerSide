@@ -10,26 +10,29 @@ class Spot < ApplicationRecord
   validates :image_url, presence: true
   validates :longitude, presence: true
   validates :latitude, presence: true
+  validates :detail, presence: true
   validates :is_male, inclusion: { in: [true, false] }
   validates :is_female, inclusion: { in: [true, false] }
   validates :start_hour, presence: true
   validates :end_hour, presence: true
 
-  def self.get_main_spot(_date, area, member, is_male, is_female)
-    main_spots = Spot.where('is_male=? and is_female=? and max_people.gteq ? and min_people.lteq ?', is_male, is_female, member, member)
+  def self.get_main_spot(_date, area, member)
+    main_spots = Spot.where('max_people.gteq ? and min_people.lteq ?', member, member)
     main_spots = main_spots.joins(:spot_areas).joins(:areas).where('name' => area)
     main_spots
   end
 
+  # @param [Object] id
+  # @return [Object] sub_spots
   def self.get_sub_spot(id)
     main_spot = Spot.joins(:spot_areas).joins(:areas).find(id)
-    Spot.joins(:spot_areas).joins(:areas).where('area_name' => main_spot.area_name)
-        .each do |spot|
+    sub_spots = []
+    Spot.joins(:spot_areas).joins(:areas).where('area_name' => main_spot.area_name).each do |spot|
       if distance(spot.latitude, spot.longitude, main_spot.latitude, main_spot.longitude) < 1.0
-        @sub_spots += spot
+        sub_spots.push(spot)
       end
     end
-    @sub_spots
+    sub_spots
   end
 
   # get distance from two points

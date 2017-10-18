@@ -10,46 +10,52 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20_171_011_040_245) do
-  create_table 'areas', force: :cascade, options: 'ENGINE=InnoDB DEFAULT CHARSET=utf8' do |t|
-    t.string 'name'
-    t.datetime 'created_at', null: false
-    t.datetime 'updated_at', null: false
+ActiveRecord::Schema.define(version: 20171011040245) do
+
+  create_table "areas", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.string "area_name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
-  create_table 'spot_areas', force: :cascade, options: 'ENGINE=InnoDB DEFAULT CHARSET=utf8' do |t|
-    t.integer 'spot_id'
-    t.integer 'area_id'
-    t.datetime 'created_at', null: false
-    t.datetime 'updated_at', null: false
+  create_table "spot_areas", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.bigint "spot_id"
+    t.bigint "area_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["area_id"], name: "index_spot_areas_on_area_id"
+    t.index ["spot_id"], name: "index_spot_areas_on_spot_id"
   end
 
-  create_table 'spot_tags', force: :cascade, options: 'ENGINE=InnoDB DEFAULT CHARSET=utf8' do |t|
-    t.integer 'spot_id'
-    t.integer 'tag_id'
-    t.datetime 'created_at', null: false
-    t.datetime 'updated_at', null: false
+  create_table "spot_tags", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.bigint "spot_id"
+    t.bigint "tag_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["spot_id"], name: "index_spot_tags_on_spot_id"
+    t.index ["tag_id"], name: "index_spot_tags_on_tag_id"
   end
 
-  create_table 'spots', force: :cascade, options: 'ENGINE=InnoDB DEFAULT CHARSET=utf8' do |t|
-    t.string 'spot_name'
-    t.string 'image_url'
-    t.decimal 'longtitude', precision: 10
-    t.decimal 'latitude', precision: 10
-    t.text 'detail'
-    t.integer 'min_people'
-    t.integer 'max_people'
-    t.boolean 'is_female'
-    t.boolean 'is_male'
-    t.time 'start_hour'
-    t.time 'end_hour'
-    t.datetime 'created_at', null: false
-    t.datetime 'updated_at', null: false
+  create_table "spots", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.string "spot_name"
+    t.string "image_url"
+    t.decimal "longitude", precision: 10
+    t.decimal "latitude", precision: 10
+    t.text "detail"
+    t.integer "min_people"
+    t.integer "max_people"
+    t.boolean "is_female"
+    t.boolean "is_male"
+    t.time "start_hour"
+    t.time "end_hour"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
-  create_table 'tags', force: :cascade, options: 'ENGINE=InnoDB DEFAULT CHARSET=utf8' do |t|
-    t.string 'name'
-    t.datetime 'created_at', null: false
-    t.datetime 'updated_at', null: false
+  create_table "tags", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.string "tag_name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
+
 end
