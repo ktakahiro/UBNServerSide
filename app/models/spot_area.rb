@@ -1,5 +1,5 @@
+# spot_area database
 class SpotArea < ApplicationRecord
-  belongs_to :spots
-  belongs_to :areas
-  
+  belongs_to :spot
+  belongs_to :area
 end

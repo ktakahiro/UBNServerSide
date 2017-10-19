@@ -1,4 +1,5 @@
+# spot_tag database
 class SpotTag < ApplicationRecord
-  belongs_to :spots
-  belongs_to :tags
+  belongs_to :spot
+  belongs_to :tag
 end
