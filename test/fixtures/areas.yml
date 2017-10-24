@@ -2,8 +2,8 @@
 
 one:
   id: 1
-  area_name: MyString
+  area_name: 新宿
 
 two:
   id: 2
-  area_name: MyString
+  area_name: 池袋

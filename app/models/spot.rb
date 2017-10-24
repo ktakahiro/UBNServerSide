@@ -17,17 +17,21 @@ class Spot < ApplicationRecord
   validates :end_hour, presence: true
 
   def self.get_main_spot(_date, area, member)
-    main_spots = Spot.where('max_people.gteq ? and min_people.lteq ?', member, member)
-    main_spots = main_spots.joins(:spot_areas).joins(:areas).where('area_name' => area)
+    main_spots = Spot.joins(:areas).where('max_people > ? and min_people < ? and area_name = ?', member, member, area)
+                     .select('spots.*,areas.area_name')
+    main_spots = main_spots.joins(:tags).select('spots.*,tags.tag_name')
     main_spots
   end
 
   # @param [Object] id
   # @return [Object] sub_spots
   def self.get_sub_spot(id)
-    main_spot = Spot.joins(:spot_areas).joins(:areas).find(id)
+    main_spot = Spot.joins(:areas).select('spots.*,areas.area_name').find(id)
+    temp_spots = Spot.joins(:areas)
+                     .where('area_name = ? and id <> ?', main_spot.area_name,main_spot.id).select('spots.*,areas.area_name')
+    temp_spots = temp_spots.joins(:tags).select('spots.*,tags.tag_name')
     sub_spots = []
-    Spot.joins(:spot_areas).joins(:areas).where('area_name' => main_spot.area_name).each do |spot|
+    temp_spots.each do |spot|
       if distance(spot.latitude, spot.longitude, main_spot.latitude, main_spot.longitude) < 1.0
         sub_spots.push(spot)
       end
@@ -41,7 +45,7 @@ class Spot < ApplicationRecord
   # @param [Float] lat2
   # @param [Float] lng2
   # @return [Float] distance
-  def distance(lat1, lng1, lat2, lng2)
+  def self.distance(lat1, lng1, lat2, lng2)
     # convert to radian
     x1 = lat1.to_f * Math::PI / 180
     y1 = lng1.to_f * Math::PI / 180

@@ -2,12 +2,12 @@
 
 one:
   id: 1
-  spot_name: MyString
-  image_url: MyString
+  spot_name: カラオケ
+  image_url: www.karaoke.com
   longitude: 9.99
   latitude: 9.99
   detail: MyText
-  min_people: 3
+  min_people: 7
   max_people: 10
   is_female: false
   is_male: false
@@ -16,8 +16,8 @@ one:
 
 two:
   id: 2
-  spot_name: MyString
-  image_url: MyString
+  spot_name:  カフェ
+  image_url: www.cafe.com
   longitude: 9.99
   latitude: 9.99
   detail: MyText
