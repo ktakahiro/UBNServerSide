@@ -39,8 +39,8 @@ ActiveRecord::Schema.define(version: 20171011040245) do
   create_table "spots", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string "spot_name"
     t.string "image_url"
-    t.decimal "longitude", precision: 10
-    t.decimal "latitude", precision: 10
+    t.decimal "longitude", precision: 9, scale: 6
+    t.decimal "latitude", precision: 9, scale: 6
     t.text "detail"
     t.integer "min_people"
     t.integer "max_people"

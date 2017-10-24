@@ -4,10 +4,10 @@ one:
   id: 1
   spot_name: カラオケ
   image_url: www.karaoke.com
-  longitude: 9.99
-  latitude: 9.99
+  longitude: 129.999999
+  latitude: 129.9999999
   detail: MyText
-  min_people: 7
+  min_people: 6
   max_people: 10
   is_female: false
   is_male: false
@@ -18,8 +18,8 @@ two:
   id: 2
   spot_name:  カフェ
   image_url: www.cafe.com
-  longitude: 9.99
-  latitude: 9.99
+  longitude: 129.999999
+  latitude: 129.999999
   detail: MyText
   min_people: 4
   max_people: 6

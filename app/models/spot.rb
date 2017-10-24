@@ -17,7 +17,7 @@ class Spot < ApplicationRecord
   validates :end_hour, presence: true
 
   def self.get_main_spot(_date, area, member)
-    main_spots = Spot.joins(:areas).where('max_people > ? and min_people < ? and area_name = ?', member, member, area)
+    main_spots = Spot.joins(:areas).where('max_people >= ? and min_people <= ? and area_name = ?', member, member, area)
                      .select('spots.*,areas.area_name')
     main_spots = main_spots.joins(:tags).select('spots.*,tags.tag_name')
     main_spots
@@ -27,8 +27,9 @@ class Spot < ApplicationRecord
   # @return [Object] sub_spots
   def self.get_sub_spot(id)
     main_spot = Spot.joins(:areas).select('spots.*,areas.area_name').find(id)
+    # Rails.logger.debug "the main spot id is #{main_spot.id}"
     temp_spots = Spot.joins(:areas)
-                     .where('area_name = ? and id <> ?', main_spot.area_name,main_spot.id).select('spots.*,areas.area_name')
+                     .where('area_name = ? and spots.id != ?', main_spot.area_name,main_spot.id).select('spots.*,areas.area_name')
     temp_spots = temp_spots.joins(:tags).select('spots.*,tags.tag_name')
     sub_spots = []
     temp_spots.each do |spot|
