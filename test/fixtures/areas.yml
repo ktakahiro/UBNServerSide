@@ -1,9 +1,9 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  id: 
-  name: MyString
+  id: 1
+  area_name: MyString
 
 two:
-  id: 
-  name: MyString
+  id: 2
+  area_name: MyString

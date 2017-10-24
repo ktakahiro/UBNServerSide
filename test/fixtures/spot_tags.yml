@@ -1,11 +1,16 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  id: 
-  spot_id: 
-  tag_id: 
+  id: 1
+  spot_id: 1
+  tag_id: 1
 
 two:
-  id: 
-  spot_id: 
-  tag_id: 
+  id: 2
+  spot_id: 2
+  tag_id: 1
+
+three:
+  id: 3
+  spot_id: 2
+  tag_id: 2

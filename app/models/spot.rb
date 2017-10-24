@@ -18,7 +18,7 @@ class Spot < ApplicationRecord
 
   def self.get_main_spot(_date, area, member)
     main_spots = Spot.where('max_people.gteq ? and min_people.lteq ?', member, member)
-    main_spots = main_spots.joins(:spot_areas).joins(:areas).where('name' => area)
+    main_spots = main_spots.joins(:spot_areas).joins(:areas).where('area_name' => area)
     main_spots
   end
 
