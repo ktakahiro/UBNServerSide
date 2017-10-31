@@ -1,12 +1,16 @@
 class DetailspotController < ApplicationController
   def index
-    @spot = {
-      id: 1,
-      imagePath: "www.example.com",
-      latitude: 43.7628257,
-      longitude: 43.7628257,
-      detail: "it is really really example.",
-      tagList: {tag1: "tag1", tag2: "tag2"}
+    @spot = Spot.find(detailspot_params[:id])
+    @tag_names = Spot.get_tag(detailspot_params[:id]).pluck :tag_name
+    @spot =
+    {
+      id: @spot.id,
+      imagePath: @spot.image_url,
+      spotName: @spot.spot_name,
+      latitude: @spot.latitude,
+      longitude: @spot.longitude,
+      detail: @spot.detail,
+      tagList: @tag_names
     }
     render json: @spot
   end

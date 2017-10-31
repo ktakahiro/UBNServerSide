@@ -1,22 +1,18 @@
 class SubspotController < ApplicationController
   def index
-    @tags = ["tag1", "tag2"]
-    @spot = {
-      id: 1,
-      imagePath: "www.example.com",
-      spotName: "example",
-      tagList: @tags
-    }
-    @spot1 = {
-      id: 1,
-      imagePath: "www.example.com",
-      spotName: "example",
-      tagList: @tags
-    }
-    @spots = [@spot, @spot1]
+    @subspots = Spot.get_sub_spot(subspot_params[:id])
+    @subspots = @subspots.map do |subspot|
+      @tagList = Spot.get_tag(subspot.id).pluck :tag_name
+      {
+        id: subspot.id,
+        imagePath: subspot.image_url,
+        spotName: subspot.detail,
+        tagList: @tagList
+      }
+    end
     @spotsJson = {
-      subSpotList: @spots,
-      subSpotNum: 2
+      subSpotList: @subspots,
+      subSpotNum: @subspots.length
     }
     render json: @spotsJson
   end
