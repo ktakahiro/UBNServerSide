@@ -1,22 +1,18 @@
 class SpotController < ApplicationController
   def index
-    @tags = ["tag1", "tag2"]
-    @spot = {
-      id: 1,
-      imagePath: "www.example.com",
-      spotName: "example",
-      tagList: @tags
-    }
-    @spot1 = {
-      id: 1,
-      imagePath: "www.example.com",
-      spotName: "example",
-      tagList: @tags
-    }
-    @spots = [@spot, @spot1]
+    @mainspots = Spot.get_main_spot(spot_params[:date], spot_params[:place], spot_params[:male])
+    @mainspots = @mainspots.map do |mainspot|
+      @tagList = Spot.get_tag(mainspot.id).pluck :tag_name
+      {
+        id: mainspot.id,
+        imagePath: mainspot.image_url,
+        spotName: mainspot.detail,
+        tagList: @tagList
+      }
+    end
     @spotsJson = {
-      spotList: @spots,
-      spotNum: 2
+      spotList: @mainspots,
+      spotNum: @mainspots.length
     }
     render json: @spotsJson
   end
