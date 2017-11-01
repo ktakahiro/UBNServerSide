@@ -17,7 +17,14 @@ class Spot < ApplicationRecord
   validates :end_hour, presence: true
 
   def self.get_main_spot(_date, area, member)
-    main_spots = Spot.joins(:areas).where('max_people >= ? and min_people <= ? and area_name = ?', member, member, area)
+    if area == null
+      main_spots = Spot.joins(:areas).where('max_people >= ? and min_people <= ?', member, member)
+    elsif member == null
+      main_spots = Spot.joins(:areas).where('area_name = ?', area)
+    else
+      main_spots = Spot.joins(:areas).where('max_people >= ? and min_people <= ? and area_name = ?', member, member, area)
+    end
+
     main_spots
   end
 
@@ -39,7 +46,6 @@ class Spot < ApplicationRecord
 
   def self.get_tag(id)
     tag = Spot.joins(:tags).where('spots.id = ?', id).select('tags.*')
-
   end
 
   # get distance from two points
