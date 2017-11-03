@@ -25,7 +25,7 @@ class Spot < ApplicationRecord
       main_spots = Spot.joins(:areas).where('max_people >= ? and min_people <= ? and area_name = ?', member, member, area)
     end
 
-    main_spots
+    main_spots.uniq
   end
 
   # @param [Object] id
