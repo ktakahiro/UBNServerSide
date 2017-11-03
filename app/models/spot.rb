@@ -20,9 +20,9 @@ class Spot < ApplicationRecord
     if area == nil
       main_spots = Spot.joins(:areas).where('max_people >= ? and min_people <= ?', member, member)
     elsif member == nil
-      main_spots = Spot.joins(:areas).where('area_name = ?', area)
+      main_spots = Spot.joins(:areas).where('area_id = ?', area)
     else
-      main_spots = Spot.joins(:areas).where('max_people >= ? and min_people <= ? and area_name = ?', member, member, area)
+      main_spots = Spot.joins(:areas).where('max_people >= ? and min_people <= ? and area_id = ?', member, member, area)
     end
 
     main_spots.uniq

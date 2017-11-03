@@ -1,6 +1,6 @@
 class SpotController < ApplicationController
   def index
-    @mainspots = Spot.get_main_spot(spot_params[:date], spot_params[:place], spot_params[:male])
+    @mainspots = Spot.get_main_spot(spot_params[:date], spot_params[:place], spot_params[:peopleNum])
     @mainspots = @mainspots.map do |mainspot|
       @tagList = Spot.get_tag(mainspot.id).pluck :tag_name
       {
@@ -21,6 +21,6 @@ class SpotController < ApplicationController
   private
   # リクエストパラメータのバリデーション
   def spot_params
-    params.permit(:date, :place, :female, :male, :from, :to)
+    params.permit(:date, :place, :peopleNum, :from, :to)
   end
 end
