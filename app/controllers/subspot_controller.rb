@@ -14,7 +14,7 @@ class SubspotController < ApplicationController
       subSpotList: @subspots,
       subSpotNum: @subspots.length
     }
-    render json: @spotsJson
+    render json: @subspots
   end
 
 

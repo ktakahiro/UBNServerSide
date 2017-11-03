@@ -14,7 +14,7 @@ class SpotController < ApplicationController
       spotList: @mainspots,
       spotNum: @mainspots.length
     }
-    render json: @spotsJson
+    render json: @mainspots
   end
 
 
