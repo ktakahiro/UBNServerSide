@@ -5,6 +5,7 @@ class DetailspotController < ApplicationController
     @spot =
     {
       id: @spot.id,
+      url: @spot.hp_url,
       imagePath: @spot.image_url,
       spotName: @spot.spot_name,
       latitude: @spot.latitude,

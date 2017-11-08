@@ -3,6 +3,7 @@ class CreateSpots < ActiveRecord::Migration[5.1]
     create_table :spots do |t|
       t.string :spot_name
       t.string :image_url
+      t.string :hp_url
       t.decimal :longitude, :precision => 9, :scale => 6
       t.decimal :latitude, :precision => 9, :scale => 6
       t.text :detail
