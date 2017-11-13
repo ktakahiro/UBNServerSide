@@ -25,7 +25,7 @@ Dir.glob("#{Rails.root}/db/seeds/areas.yml").each do |yaml_filename|
 end
 
 
-=begin
+
 Dir.glob("#{Rails.root}/db/seeds/spots.yml").each do |yaml_filename|
   # yamlのファイル名から、対応するモデルクラスを特定し、クラスをロードする
   # 下記行が無いと、「ArgumentError: undefined class/module」が発生する。
@@ -42,7 +42,7 @@ Dir.glob("#{Rails.root}/db/seeds/spots.yml").each do |yaml_filename|
     end
   end
 end
-=end
+
 
 Dir.glob("#{Rails.root}/db/seeds/tags.yml").each do |yaml_filename|
   # yamlのファイル名から、対応するモデルクラスを特定し、クラスをロードする
