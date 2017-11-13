@@ -6,7 +6,7 @@ class SpotController < ApplicationController
       {
         id: mainspot.id,
         imagePath: mainspot.image_url,
-        spotName: mainspot.detail,
+        spotName: mainspot.spot_name,
         tagList: @tagList
       }
     end
