@@ -1,0 +1,105 @@
+- !ruby/object:SpotArea
+  attributes:
+    id: 1
+    spot_id: 1
+    area_id: 1
+- !ruby/object:SpotArea
+  attributes:
+    id: 2
+    spot_id: 2
+    area_id: 1
+- !ruby/object:SpotArea
+  attributes:
+    id: 3
+    spot_id: 3
+    area_id: 1
+- !ruby/object:SpotArea
+  attributes:
+    id: 4
+    spot_id: 4
+    area_id: 1
+- !ruby/object:SpotArea
+  attributes:
+    id: 5
+    spot_id: 5
+    area_id: 1
+- !ruby/object:SpotArea
+  attributes:
+    id: 6
+    spot_id: 6
+    area_id: 1
+- !ruby/object:SpotArea
+  attributes:
+    id: 7
+    spot_id: 7
+    area_id: 1
+- !ruby/object:SpotArea
+  attributes:
+    id: 8
+    spot_id: 8
+    area_id: 1
+- !ruby/object:SpotArea
+  attributes:
+    id: 9
+    spot_id: 9
+    area_id: 1
+- !ruby/object:SpotArea
+  attributes:
+    id: 10
+    spot_id: 10
+    area_id: 1
+- !ruby/object:SpotArea
+  attributes:
+    id: 11
+    spot_id: 11
+    area_id: 1
+- !ruby/object:SpotArea
+  attributes:
+    id: 12
+    spot_id: 12
+    area_id: 1
+- !ruby/object:SpotArea
+  attributes:
+    id: 13
+    spot_id: 13
+    area_id: 1
+- !ruby/object:SpotArea
+  attributes:
+    id: 14
+    spot_id: 14
+    area_id: 2
+- !ruby/object:SpotArea
+  attributes:
+    id: 15
+    spot_id: 15
+    area_id: 2
+- !ruby/object:SpotArea
+  attributes:
+    id: 16
+    spot_id: 16
+    area_id: 2
+- !ruby/object:SpotArea
+  attributes:
+    id: 17
+    spot_id: 17
+    area_id: 2
+- !ruby/object:SpotArea
+  attributes:
+    id: 18
+    spot_id: 18
+    area_id: 2
+- !ruby/object:SpotArea
+  attributes:
+    id: 19
+    spot_id: 19
+    area_id: 2
+- !ruby/object:SpotArea
+  attributes:
+    id: 20
+    spot_id: 20
+    area_id: 2
+- !ruby/object:SpotArea
+  attributes:
+    id: 21
+    spot_id: 21
+    area_id: 2

@@ -1,0 +1,9 @@
+- !ruby/object:Area
+  attributes:
+    id: 1
+    area_name: 横浜
+
+- !ruby/object:Area
+  attributes:
+    id: 2
+    area_name: 浅草

@@ -1,0 +1,378 @@
+- !ruby/object:Spot
+  attributes:
+    id: 1
+    spot_name: 浅草花やしき
+    image_url: http://www.tokyo-park.net/images/1310661001_01.jpg
+    hp_url: http://www.hanayashiki.net/
+    longitude: 139.79396499999999
+    latitude: 35.715378000000001
+    detail: >-
+      東京の浅草・浅草寺の近くにある遊園地。もともと植物園だった場所を改装して遊園地を作ったという経緯があります。
+
+      園内にはおよそ25のアトラクションを設置。派手さはないものの、ローラーコースターやメリーゴーラウンド、お化け屋敷といった昔懐かしいアトラクションが揃っており、主に家族連れからの人気を誇っています。
+    min_people: 4
+    max_people: 10
+    is_female: false
+    is_male: false
+    start_hour: 1899-12-30T10:00:00.0000000
+    end_hour: 1899-12-30T18:00:00.0000000
+
+- !ruby/object:Spot
+  attributes:
+    id: 2
+    spot_name: 浅草寺
+    image_url: https://travel.mar-ker.com/wp-content/images/sites/6/2016/11/sensoji-precincts.jpg
+    hp_url: http://www.senso-ji.jp/
+    longitude: 139.79665499999999
+    latitude: 35.714765
+    detail: 東京都内で最古のお寺といわれています。本尊の観音さま（秘仏）の霊験はとても強大といわれ、商売繁盛、家内安全、学業成就、厄除け、病気平癒など、あらゆる願いに効験があるとされています。周辺には言わずと知れた雷門、せんべいやさんやら衣装やさんやら昔ながらのおみせがずらりと並ぶ仲見世通り、五重塔があります。
+    min_people: 1
+    max_people: 6
+    is_female: false
+    is_male: false
+    start_hour: 1899-12-30T06:00:00.0000000
+    end_hour: 1899-12-30T17:00:00.0000000
+- !ruby/object:Spot
+  attributes:
+    id: 3
+    spot_name: 東京スカイツリー
+    image_url: http://blog.skytree-obayashi.com/images/120301_06.jpg
+    hp_url: www.tokyo-skytree.jp/
+    longitude: 139.8107
+    latitude: 35.710062999999998
+    detail: 東京スカイツリーは高さ634m。自立式電波塔として、「世界一」の高さを誇ります。
+    min_people: 2
+    max_people: 6
+    is_female: false
+    is_male: false
+    start_hour: 1899-12-30T08:00:00.0000000
+    end_hour: 1899-12-30T22:00:00.0000000
+- !ruby/object:Spot
+  attributes:
+    id: 4
+    spot_name: すみだ水族館
+    image_url: http://photolala.net/wp-content/uploads/2016/07/sumida-02.jpg
+    hp_url: http://www.sumida-aquarium.com/
+    longitude: 139.80963
+    latitude: 35.709944999999998
+    detail: 東京スカイツリータウンウエストヤードの5階と6階の2層からなる『すみだ水族館』。上下フロアのつながりは、3つのルートから成り、それぞれに楽しみ方が異なります。決められた順路は無く、何度も行き来し、心行くまで水族館内を回遊し、さまざまな角度や視点で水槽を鑑賞することができます。お客さま一人ひとりがそれぞれの楽しみ方で鑑賞いただけます。
+    min_people: 2
+    max_people: 6
+    is_female: false
+    is_male: false
+    start_hour: 1899-12-30T09:00:00.0000000
+    end_hour: 1899-12-30T21:00:00.0000000
+- !ruby/object:Spot
+  attributes:
+    id: 5
+    spot_name: 隅田公園
+    image_url: http://e-asakusa.jp/wp-content/uploads/sakura1-1.jpg
+    hp_url: http://visit-sumida.jp/spot/6133/
+    longitude: 139.803313
+    latitude: 35.716054999999997
+    detail: 東京スカイツリーの眺め、隅田川沿いの景色（特に桜の時期）等を楽しむのに最適で、着物姿（レンタル）での記念撮影の方も多いですが、緑が多く、歩道等も整備されており、園内の散策にも適しているほか、遊具もそれなりに充実しています
+    min_people: 1
+    max_people: 10
+    is_female: false
+    is_male: false
+    start_hour: 1899-12-30T00:00:00.0000000
+    end_hour: 1899-12-30T00:00:00.0000000
+- !ruby/object:Spot
+  attributes:
+    id: 6
+    spot_name: 東京ソラマチ
+    image_url: https://www.enjoytokyo.jp/img/s_s/l/911/l/l_00036911IMG2.jpg
+    hp_url: www.tokyo-solamachi.jp/
+    longitude: 139.81070099999999
+    latitude: 35.710113
+    detail: スカイツリーの足元にある「東京ソラマチ」は、ファッション、雑貨、レストラン、水族館、プラネタリウムなど312の店舗からなる大型商業施設です。
+    min_people: 1
+    max_people: 8
+    is_female: false
+    is_male: false
+    start_hour: 1899-12-30T10:00:00.0000000
+    end_hour: 1899-12-30T21:00:00.0000000
+- !ruby/object:Spot
+  attributes:
+    id: 7
+    spot_name: かっぱ橋道具街
+    image_url: https://s3-ap-northeast-1.amazonaws.com/storage.deece.jp/uploads/amusement/image/11198126/52c79d326d1d81ad_h480.jpg
+    hp_url: http://www.kappabashi.or.jp/
+    longitude: 139.788871
+    latitude: 35.714495999999997
+    detail: かっぱ橋道具街は浅草と上野の中間にある南北約８００ｍの商店街です。大正の初めに新堀川（シンボリガワ）という江戸時代に作られた川の両岸に古道具を商う人たちが店を出したことが発祥とされています。戦後の昭和２０年代以降はその時々の飲食業界のニーズに対応した、様々な業種の店舗が集積する個性的な専門商店街として発展し、現在は約１７０店舗が本ページ左側の業種別検索で表示される種々のジャンルの営業を行なっています。
+    min_people: 1
+    max_people: 6
+    is_female: false
+    is_male: false
+    start_hour: 1899-12-30T09:00:00.0000000
+    end_hour: 1899-12-30T17:00:00.0000000
+- !ruby/object:Spot
+  attributes:
+    id: 8
+    spot_name: 浅草演芸ホール
+    image_url: http://www.cocoren.jp/data/shop/4eff27a10e3894ab4c250000/img01-1325344673-328x244.jpg
+    hp_url: http://www.asakusaengei.com/
+    longitude: 139.793025
+    latitude: 35.713507
+    detail: 東京都台東区浅草の通称「公園六区」と呼ばれる歓楽街の中心に位置する寄席である。都内に4軒ある落語定席の一つで、落語を中心に、漫才、手品などの色物芸が多数執り行われている。東洋興業株式会社が経営している。
+    min_people: 1
+    max_people: 6
+    is_female: false
+    is_male: false
+    start_hour: 1899-12-30T11:40:00.0000000
+    end_hour: 1899-12-30T21:00:00.0000000
+- !ruby/object:Spot
+   attributes:
+    id: 9
+    spot_name: 浅草神社
+    image_url: https://xn----kx8a55x5zdu8lw8ih93b.jinja-tera-gosyuin-meguri.com/wp-content/uploads/2016/07/%E6%B5%85%E8%8D%89%E7%A5%9E%E7%A4%BE%E3%83%BB%E6%8B%9D%E6%AE%BF.jpg
+    hp_url: http://www.asakusajinja.jp/index_2.html
+    longitude: 139.79745500000001
+    latitude: 35.715082000000002
+    detail: 浅草神社では、家庭の幸せ、交通事故の防止、商売の成功、病気の防止、健康の維持、試験の合格などさまざまな願いを叶えるためのお祈りを行っています。
+    min_people: 1
+    max_people: 6
+    is_female: false
+    is_male: false
+    start_hour: 1899-12-30T09:00:00.0000000
+    end_hour: 1899-12-30T16:30:00.0000000
+- !ruby/object:Spot
+  attributes:
+    id: 10
+    spot_name: 浅草今半 国際通り本店
+    image_url: https://rr.img.naver.jp/mig?src=http%3A%2F%2Fimgcc.naver.jp%2Fkaze%2Fmission%2FUSER%2F20120717%2F18%2F1002608%2F61%2F570x417xd1f95c4d2320d18c10fa38aa.jpg%2F300%2F600&twidth=300&theight=600&qlt=80&res_format=jpg&op=r
+    hp_url: http://www.asakusaimahan.co.jp/
+    longitude: 139.792134
+    latitude: 35.713988000000001
+    detail: >-
+      今半といえば浅草。浅草といえば今半といわれるくらいの老舗。
+
+      お金と時間に余裕があるなら是非訪れてみたいすき焼きの名店。浅草にいくつか店舗があります。
+    min_people: 2
+    max_people: 6
+    is_female: false
+    is_male: false
+    start_hour: 1899-12-30T11:30:00.0000000
+    end_hour: 1899-12-30T21:30:00.0000000
+- !ruby/object:Spot
+  attributes:
+    id: 11
+    spot_name: どぜう飯田屋
+    image_url: http://asakusa-ryoin.jp/iidaya/images/p3.jpg
+    hp_url: http://asakusa-ryoin.jp/iidaya/
+    longitude: 139.79159200000001
+    latitude: 35.714101999999997
+    detail: 飯田屋さんのどじょうは臭みがなくて美味しいと評判です。地元の集まりでよく使われています。
+    min_people: 1
+    max_people: 4
+    is_female: false
+    is_male: false
+    start_hour: 1899-12-30T11:30:00.0000000
+    end_hour: 1899-12-30T21:30:00.0000000
+- !ruby/object:Spot
+  attributes:
+    id: 12
+    spot_name: レストラン大宮   浅草本店
+    image_url: http://blogimg.goo.ne.jp/user_image/1c/af/25a831211fb345efafd4cc5dbb040a71.jpg
+    hp_url: http://0038.info/asakusa/
+    longitude: 139.79721699999999
+    latitude: 35.712860999999997
+    detail: >-
+      浅草の洋食でその立場を確立しつつある名店。
+
+      場所も仲見世の真ん中の右側、浅草寺の手前と観光コースのど真ん中。
+
+      味も当然大満足。
+
+      テレビの取材も結構見られる浅草を代表する名店の一つです。
+    min_people: 1
+    max_people: 4
+    is_female: false
+    is_male: false
+    start_hour: 1899-12-30T11:30:00.0000000
+    end_hour: 1899-12-30T20:30:00.0000000
+- !ruby/object:Spot
+  attributes:
+    id: 13
+    spot_name: 梅園 浅草本店
+    image_url: https://s.eximg.jp/expub/feed/B2m/2016/B2m_1273302/B2m_1273302_1.jpg
+    hp_url: http://www.asakusa-umezono.co.jp/
+    longitude: 139.79630299999999
+    latitude: 35.712819000000003
+    detail: 仲見世の裏にある甘味処。こちらのあわぜんざいやあんみつは一度は食べてみたい。
+    min_people: 2
+    max_people: 6
+    is_female: false
+    is_male: false
+    start_hour: 1899-12-30T10:00:00.0000000
+    end_hour: 1899-12-30T20:00:00.0000000
+- !ruby/object:Spot
+  attributes:
+    id: 14
+    spot_name: カップヌードルミュージアム(安藤百福発明記念館)
+    image_url: https://d2goguvysdoarq.cloudfront.net/system/facility_photos/photos/21560/normal.jpg?1393395203
+    hp_url: https://www.cupnoodles-museum.jp/ja/
+    longitude: 139.638758
+    latitude: 35.455480999999999
+    detail: >-
+      インスタントラーメンにまつわるさまざまな展示や体験など通じて、発明・発見の大切さやベンチャーマインドについて楽しみながら学べる体験型ミュージアムです。
+
+      自分だけのオリジナル「カップヌードル」が作れたり、巨大な工場の中で自分が麺になって遊んだり、世界各国の珍しい麺料理が味わえたり、インスタントラーメンの歴史に触れたり、とにかくここはインスタントラーメンづくし！
+
+      世界初のインスタントラーメン「チキンラーメン」を手作りできる体験工房（要予約・年齢制限あり）では、小麦粉をこねるところから「瞬間油熱乾燥法」で乾燥するまでの工程を体験できるのも大きな魅力！また、インスタントラーメンの父「安藤百福」の研究小屋やアニメーションシアターなどを見学すればチキンラーメンを開発するまでの歴史や苦悩を知ることもできるはず。これでもうインスタントラーメン博士！帰りにはミュージアムショップでオリジナル商品や限定商品を購入してお土産にしよう！
+    min_people: 1
+    max_people: 10
+    is_female: false
+    is_male: false
+    start_hour: 1899-12-30T10:00:00.0000000
+    end_hour: 1899-12-30T18:00:00.0000000
+- !ruby/object:Spot
+  attributes:
+    id: 15
+    spot_name: 横浜・八景島シーパラダイス
+    image_url: https://d2goguvysdoarq.cloudfront.net/system/facility_photos/photos/22101/normal.JPG?1394245212
+    hp_url: http://www.seaparadise.co.jp
+    longitude: 139.64460600000001
+    latitude: 35.336058999999999
+    detail: >-
+      八景島の中に、水族館、アトラクション、レストラン、ショッピングモール、ホテル等が集まった、複合型アミューズメント施設。
+
+
+      海の生きものたちを総合的に知ることができる水族館「アクアミュージアム」
+
+      7万尾のイワシたちが魅せる壮大な海のドラマ「群れと輝きの魚たち」は必見！
+
+
+      イルカたちと癒しのひとときを過ごせる空と海の水族館「ドルフィン ファンタジー」
+
+
+      海の生きものたちとふれあえる「ふれあいラグーン」は可能な限り仕切りを取り除いた開放的な施設で、通常の水族館よりも海の生きもの達を近くに感じることができるようになった。イルカやクジラとふれあえるプログラムもあります。（一部、公式ホームページより要事前予約）
+
+
+      ひとが自然の海とふれあい、海と共に成長していく“海育”がコンセプトの「うみファーム」では、自分で釣った魚をからあげにして食べることができます。
+
+      プレジャーランドはブルーフォールやサーフコースターなどの絶叫系からメリーゴーラウンドなどのラブラブ系まで一日中楽しめるアトラクションがいっぱいです。
+    min_people: 1
+    max_people: 10
+    is_female: false
+    is_male: false
+    start_hour: 1899-12-30T09:00:00.0000000
+    end_hour: 1899-12-30T21:00:00.0000000
+- !ruby/object:Spot
+  attributes:
+    id: 16
+    spot_name: 横浜アンパンマンこどもミュージアム＆モール
+    image_url: https://d2goguvysdoarq.cloudfront.net/system/facility_photos/photos/28092/normal.jpg?1405330873
+    hp_url: http://www.yokohama-anpanman.jp/index.html
+    longitude: 139.62545399999999
+    latitude: 35.458567000000002
+    detail: >-
+      アンパンマンの世界に入りたいという子供の夢を叶えたミュージアムには、3Fおでむかえジオラマをはじめ、アンパンマンごうやジャムおじさんのパン工場があり、2Fではおねえさんと一緒に体を動かして、ダンスやてあそびをしたり、大人気の人形劇や紙芝居の上映も。みみせんせいのがっこうでは工作教室を開催！1Fの『やなせたかし劇場』ではアンパンマンや仲間たちが登場するミニステージも大好評★
+
+      また、ショッピングモールではここにしかない限定グッズやフード、アンパンマンの背中に乗ってカットが出来るヘアサロンなど全20店舗。
+
+      イベントや催事のスケジュールは、随時HPでアップしているので、お出かけ前にチェックしてみよう！
+
+      運がよければ、アンパンマンや仲間たちにミュージアムやショッピングモールで会えるかも！？
+    min_people: 3
+    max_people: 4
+    is_female: false
+    is_male: false
+    start_hour: 1899-12-30T09:00:00.0000000
+    end_hour: 1899-12-30T19:00:00.0000000
+- !ruby/object:Spot
+  attributes:
+    id: 17
+    spot_name: 横浜市立野毛山動物園
+    image_url: https://d2goguvysdoarq.cloudfront.net/system/facility_photos/photos/2429/normal.JPG?1365963838
+    hp_url: http://www.hama-midorinokyokai.or.jp/zoo/nogeyama/
+    longitude: 139.62226799999999
+    latitude: 35.447040999999999
+    detail: >-
+      高い丘の地形を生かした園内は散歩にぴったりなので家族でのおでかけにぴったり！
+
+      キリン、トラ、ペンギン、爬虫類など、約100種類の動物達と出会うことができます。
+
+      なかよし広場では、ハツカネズミ、モルモットなどの小動物と触れ合えます。
+
+      「動物たちのお食事タイム」では、飼育員の解説を聞くことができます。
+    min_people: 1
+    max_people: 6
+    is_female: false
+    is_male: false
+    start_hour: 1899-12-30T09:30:00.0000000
+    end_hour: 1899-12-30T16:30:00.0000000
+- !ruby/object:Spot
+  attributes:
+    id: 18
+    spot_name: よこはまコスモワールド
+    image_url: https://d2goguvysdoarq.cloudfront.net/system/facility_photos/photos/17679/normal.jpg?1384135199
+    hp_url: http://cosmoworld.jp/
+    longitude: 139.63664199999999
+    latitude: 35.455226000000003
+    detail: >-
+      入園無料（別途アトラクション料金が必要）で、約30種類のアトラクションは、コースター系のスリル満点のものから、小さな子どもが乗れるものまで揃っているので、家族全員で楽しむことができる。
+
+
+      週末には大観覧車「コスモクロック21」をモチーフにしたオリジナルキャラクター「コスモくん」による園内グリーティングを開催。子どもを対象に握手や記念撮影会を実施している。
+    min_people: 3
+    max_people: 7
+    is_female: false
+    is_male: false
+    start_hour: 1899-12-30T11:00:00.0000000
+    end_hour: 1899-12-30T22:00:00.0000000
+- !ruby/object:Spot
+  attributes:
+    id: 19
+    spot_name: 横浜中華街
+    image_url: https://cdn.jalan.jp/jalan/img/8/kuchikomi/0608/KL/a1903_0000608226_1.JPG
+    hp_url: http://www.chinatown.or.jp/
+    longitude: 139.646289
+    latitude: 35.442422000000001
+    detail: >-
+      中華レストランや中国の食材、お土産などが買える雑貨店、占いなど、約0.2平方キロのエリア内に500軒以上の店が軒を連ねる世界最大級の中華街。
+
+      神奈川県横浜市中区山下町一帯に所在し、広東・北京・上海・四川など本場の中国料理を幅広く堪能できます。
+
+      また、中華街の正門である善隣門は高さ15mで朱と金で彩られており、観光客の写真スポットとして有名で、門をくぐると中国情緒があふれています。
+
+      また、今では祝賀パレードや慶祝獅子舞（採青）などのイベントも盛大に行われ、
+
+      グルメスポットとしてだけではなく、日本を代表する観光エリアに変貌を遂げ、年間2000万人を超えるほどに。
+    min_people: 2
+    max_people: 6
+    is_female: false
+    is_male: false
+    start_hour: 1899-12-30T11:00:00.0000000
+    end_hour: 1899-12-30T22:00:00.0000000
+ - !ruby/object:Spot
+   attributes:
+    id: 20
+    spot_name: シーバス
+    image_url: https://www.jalan.net/jalan/img/6/spot/0116/KL/14100ee4610116487_6.jpg
+    hp_url: http://www.yokohama-cruising.jp/
+    longitude: 139.649382
+    latitude: 35.445931999999999
+    detail: 横浜駅東口、赤レンガ倉庫、みなとみらいぷかりさん橋、山下公園を結ぶ海上バス。
+    min_people: 2
+    max_people: 6
+    is_female: false
+    is_male: false
+    start_hour: 1899-12-30T10:00:00.0000000
+    end_hour: 1899-12-30T20:00:00.0000000
+ - !ruby/object:Spot
+  attributes:
+    id: 21
+    spot_name: 港の見える丘公園
+    image_url: https://cdn.jalan.jp/jalan/img/7/kuchikomi/1447/KL/fbb7c_0001447938_1.jpg
+    hp_url: http://www.city.yokohama.lg.jp/kankyo/park/yokohama/kouen007.html
+    longitude: 139.65557999999999
+    latitude: 35.439805999999997
+    detail: 横浜のエキゾチックなイメージを代表する山手の丘の海側の顔ともいえ、公園からベイブリッジが望める絶好のロケーションとその名称から、横浜を代表する公園の一つとして人気は高く、山手の観光コースからは外せない存在となっています。春と秋にはローズガーデンが見事です。
+    min_people: 2
+    max_people: 6
+    is_female: false
+    is_male: false
+    start_hour: 1899-12-30T00:00:00.0000000
+    end_hour: 1899-12-30T23:59:00.0000000
