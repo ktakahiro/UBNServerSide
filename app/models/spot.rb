@@ -82,4 +82,39 @@ class Spot < ApplicationRecord
     # distance (km)
     degree * radius
   end
+
+
+  def self.spot_distance(spot1, spot2)
+    # convert to radian
+    lat1 = spot1.latitude
+    lng1 = spot1.longitude
+    lat2 = spot2.latitude
+    lng2 = spot2.longitude
+
+    x1 = lat1.to_f * Math::PI / 180
+    y1 = lng1.to_f * Math::PI / 180
+    x2 = lat2.to_f * Math::PI / 180
+    y2 = lng2.to_f * Math::PI / 180
+
+    # radius of earth (km)
+    radius = 6378.137
+
+    # absolute value
+    diff_y = (y1 - y2).abs
+
+    calc1 = Math.cos(x2) * Math.sin(diff_y)
+    calc2 = Math.cos(x1) * Math.sin(x2) - Math.sin(x1) * Math.cos(x2) * Math.cos(diff_y)
+
+    # numerator
+    numerator = Math.sqrt(calc1**2 + calc2**2)
+
+    # denominator
+    denominator = Math.sin(x1) * Math.sin(x2) + Math.cos(x1) * Math.cos(x2) * Math.cos(diff_y)
+
+    # radian
+    degree = Math.atan2(numerator, denominator)
+
+    # distance (m)
+    degree * radius * 1000
+  end
 end
