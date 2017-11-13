@@ -6,7 +6,7 @@ class SubspotController < ApplicationController
       {
         id: subspot.id,
         imagePath: subspot.image_url,
-        spotName: subspot.detail,
+        spotName: subspot.spot_name,
         tagList: @tagList
       }
     end
