@@ -93,6 +93,7 @@ Spot.create do |s|
   s.id = 7
   s.spot_name = '渋谷ヒカリエ'
   s.hp_url = 'http://www.hikarie.jp'
+
   s.image_url = 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Shibuya_Hikarie_Ⅱ.JPG/250px-Shibuya_Hikarie_Ⅱ.JPG'
   s.longitude = '139.703473'
   s.latitude = '35.659025'
