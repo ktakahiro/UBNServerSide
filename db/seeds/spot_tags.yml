@@ -10,9 +10,9 @@
     tag_id: 3
 - !ruby/object:SpotTag
   attributes:
-  id: 3
-  spot_id: 3
-  tag_id: 1
+    id: 3
+    spot_id: 3
+    tag_id: 1
 - !ruby/object:SpotTag
   attributes:
     id: 4

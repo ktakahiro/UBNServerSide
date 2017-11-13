@@ -346,7 +346,7 @@
     is_male: false
     start_hour: 1899-12-30T11:00:00.0000000
     end_hour: 1899-12-30T22:00:00.0000000
- - !ruby/object:Spot
+- !ruby/object:Spot
    attributes:
     id: 20
     spot_name: シーバス
@@ -361,7 +361,7 @@
     is_male: false
     start_hour: 1899-12-30T10:00:00.0000000
     end_hour: 1899-12-30T20:00:00.0000000
- - !ruby/object:Spot
+- !ruby/object:Spot
   attributes:
     id: 21
     spot_name: 港の見える丘公園
