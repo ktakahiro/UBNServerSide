@@ -7,7 +7,9 @@ class SpotController < ApplicationController
         id: mainspot.id,
         imagePath: mainspot.image_url,
         spotName: mainspot.spot_name,
-        tagList: @tagList
+        tagList: @tagList,
+        mainTag: mainspot.main_tag_id,
+        url: mainspot.hp_url
       }
     end
     @spotsJson = {
