@@ -12,7 +12,8 @@ class DetailspotController < ApplicationController
       longitude: @spot.longitude,
       detail: @spot.detail,
       mainTag: @spot.main_tag_id,
-      tagList: @tag_names
+      tagList: @tag_names,
+      url: @spot.hp_url
     }
     render json: @spot
   end

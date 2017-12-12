@@ -7,8 +7,9 @@ class SubspotController < ApplicationController
         id: subspot.id,
         imagePath: subspot.image_url,
         spotName: subspot.spot_name,
+        tagList: @tagList,
         mainTag: subspot.main_tag_id,
-        tagList: @tagList
+        url: subspot.hp_url
       }
     end
     @spotsJson = {
