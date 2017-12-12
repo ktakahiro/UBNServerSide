@@ -11,7 +11,9 @@ class DetailspotController < ApplicationController
       latitude: @spot.latitude,
       longitude: @spot.longitude,
       detail: @spot.detail,
-      tagList: @tag_names
+      mainTag: MainTag.find(@spot.main_tag_id).name,
+      tagList: @tag_names,
+      url: @spot.hp_url
     }
     render json: @spot
   end

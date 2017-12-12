@@ -26,10 +26,10 @@ class Spot < ApplicationRecord
 
   def self.get_main_spot(_date, area, member, mainTags, query)
     main_spots = Spot.joins(:areas)
-    if area != nil and area != ""
+    if area != nil and area != "" and area != "-1"
       main_spots = main_spots.where('area_id = ?', area)
     end
-    if member != nil and member != ""
+    if member != nil and member != "" and member != "-1"
       main_spots = main_spots.where('max_people >= ? and min_people <= ?', member, member)
     end
     if mainTags != nil and mainTags != ""
@@ -60,6 +60,10 @@ class Spot < ApplicationRecord
 
   def self.get_tag(id)
     tag = Spot.joins(:tags).where('spots.id = ?', id).select('tags.*')
+  end
+
+  def self.get_main_tag(id)
+    main_tag = Spot.where('main_tag_id = ?', id).joins("inner join main_tags on spots.main_tag_id = main_tags.id").select('main_tags.name').uniq
   end
 
   # get distance from two points

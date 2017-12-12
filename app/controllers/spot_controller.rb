@@ -8,7 +8,7 @@ class SpotController < ApplicationController
         imagePath: mainspot.image_url,
         spotName: mainspot.spot_name,
         tagList: @tagList,
-        mainTag: mainspot.main_tag_id,
+        mainTag: MainTag.find(mainspot.main_tag_id).name,
         url: mainspot.hp_url
       }
     end
