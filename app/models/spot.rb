@@ -16,13 +16,13 @@ class Spot < ApplicationRecord
   validates :start_hour, presence: true
   validates :end_hour, presence: true
 
-  def self.get_main_spot(_date, area, member)
+  def self.get_main_spot(_date, area, member, mainTags)
     if area == nil
       main_spots = Spot.joins(:areas).where('max_people >= ? and min_people <= ?', member, member)
     elsif member == nil
       main_spots = Spot.joins(:areas).where('area_id = ?', area)
     else
-      main_spots = Spot.joins(:areas).where('max_people >= ? and min_people <= ? and area_id = ?', member, member, area)
+      main_spots = Spot.joins(:areas).where('max_people >= ? and min_people <= ? and area_id = ? and main_tag_id in (?)', member, member, area, mainTags)
     end
 
     main_spots.uniq

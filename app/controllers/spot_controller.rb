@@ -1,13 +1,15 @@
 class SpotController < ApplicationController
   def index
-    @mainspots = Spot.get_main_spot(spot_params[:date], spot_params[:place], spot_params[:peopleNum])
+    @mainspots = Spot.get_main_spot(spot_params[:date], spot_params[:place], spot_params[:peopleNum], params[:mainTag])
     @mainspots = @mainspots.map do |mainspot|
       @tagList = Spot.get_tag(mainspot.id).pluck :tag_name
       {
         id: mainspot.id,
         imagePath: mainspot.image_url,
         spotName: mainspot.spot_name,
-        tagList: @tagList
+        tagList: @tagList,
+        mainTag: mainspot.main_tag_id,
+        url: mainspot.hp_url
       }
     end
     @spotsJson = {

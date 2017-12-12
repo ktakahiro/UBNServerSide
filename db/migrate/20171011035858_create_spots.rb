@@ -9,6 +9,7 @@ class CreateSpots < ActiveRecord::Migration[5.1]
       t.text :detail
       t.integer :min_people
       t.integer :max_people
+      t.integer :main_tag_id
       t.boolean :is_female
       t.boolean :is_male
       t.time :start_hour
