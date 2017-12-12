@@ -16,6 +16,14 @@ class Spot < ApplicationRecord
   validates :start_hour, presence: true
   validates :end_hour, presence: true
 
+  def self.and_like(column_name, keyword_text)
+    keywords = keyword_text.split(/[[:space:]]+/).reject(&:empty?)
+    return nil if keywords.empty?
+    like_texts = ["#{column_name} like ?"] * keywords.size
+    and_like_text = like_texts.join(" AND ")
+    [and_like_text].concat(keywords.map{|keyword| "%#{keyword}%"})
+  end
+
   def self.get_main_spot(_date, area, member, mainTags, query)
     main_spots = Spot.joins(:areas)
     if area != nil and area != ""
@@ -28,7 +36,7 @@ class Spot < ApplicationRecord
       main_spots = main_spots.where('main_tag_id in (?)', mainTags)
     end
     if query != nil and query != ""
-      main_spots = main_spots.where('spot_name like (?) or detail like (?)', "%#{query}%", "%#{query}%")
+      main_spots = main_spots.where(self.and_like('spot_name', query)).or(main_spots.where((self.and_like('detail', query))))
     end
 
     main_spots.uniq
