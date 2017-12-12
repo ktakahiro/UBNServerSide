@@ -18,13 +18,13 @@ class Spot < ApplicationRecord
 
   def self.get_main_spot(_date, area, member, mainTags, query)
     main_spots = Spot.joins(:areas)
-    if area != nil
+    if area != nil and area != ""
       main_spots = main_spots.where('area_id = ?', area)
     end
-    if member != nil
+    if member != nil and member != ""
       main_spots = main_spots.where('max_people >= ? and min_people <= ?', member, member)
     end
-    if mainTags != nil
+    if mainTags != nil and mainTags != ""
       main_spots = main_spots.where('main_tag_id in (?)', mainTags)
     end
     if query != nil and query != ""
