@@ -8,7 +8,7 @@ class SubspotController < ApplicationController
         imagePath: subspot.image_url,
         spotName: subspot.spot_name,
         tagList: @tagList,
-        mainTag: subspot.main_tag_id,
+        mainTag: MainTag.find(subspot.main_tag_id).name,
         url: subspot.hp_url
       }
     end
