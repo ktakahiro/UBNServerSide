@@ -29,7 +29,7 @@ class Spot < ApplicationRecord
     if area != nil and area != "" and area != -1
       main_spots = main_spots.where('area_id = ?', area)
     end
-    if member != nil and member != "" member != -1
+    if member != nil and member != "" and member != -1
       main_spots = main_spots.where('max_people >= ? and min_people <= ?', member, member)
     end
     if mainTags != nil and mainTags != ""
