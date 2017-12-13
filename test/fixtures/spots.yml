@@ -1,28 +1,28 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  id: 
-  spot_name: MyString
-  image_url: MyString
-  longtitude: 9.99
-  latitude: 9.99
+  id: 1
+  spot_name: カラオケ
+  image_url: www.karaoke.com
+  longitude: 129.999999
+  latitude: 129.9999999
   detail: MyText
-  min_people: 
-  max_people: 
+  min_people: 6
+  max_people: 10
   is_female: false
   is_male: false
   start_hour: 2017-10-11 12:58:58
   end_hour: 2017-10-11 12:58:58
 
 two:
-  id: 
-  spot_name: MyString
-  image_url: MyString
-  longtitude: 9.99
-  latitude: 9.99
+  id: 2
+  spot_name:  カフェ
+  image_url: www.cafe.com
+  longitude: 129.999999
+  latitude: 129.999999
   detail: MyText
-  min_people: 
-  max_people: 
+  min_people: 4
+  max_people: 6
   is_female: false
   is_male: false
   start_hour: 2017-10-11 12:58:58

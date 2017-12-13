@@ -1,0 +1,12 @@
+- !ruby/object:Tag
+  attributes:
+    id: 1
+    tag_name: テーマパーク
+- !ruby/object:Tag
+  attributes:
+    id: 2
+    tag_name: 飲食店
+- !ruby/object:Tag
+  attributes:
+    id: 3
+    tag_name: アウトドア
