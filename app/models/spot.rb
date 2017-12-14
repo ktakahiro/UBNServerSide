@@ -26,7 +26,9 @@ class Spot < ApplicationRecord
 
   def self.get_main_spot(_date, area, member, mainTags, query)
     main_spots = Spot.joins(:areas)
-    if area != nil and area != "" and area != "-1"
+    if area.instance_of?(Array)
+      main_spots = main_spots.where('area_id in (?)', area)
+    elsif area != nil and area != "" and area != "-1"
       main_spots = main_spots.where('area_id = ?', area)
     end
     if member != nil and member != "" and member != "-1"
