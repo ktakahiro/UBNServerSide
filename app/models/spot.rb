@@ -55,7 +55,7 @@ class Spot < ApplicationRecord
                      .where('area_name = ? and spots.id != ?', main_spot.area_name, main_spot.id)
     sub_spots = []
     temp_spots.each do |spot|
-      if distance(spot.latitude, spot.longitude, main_spot.latitude, main_spot.longitude) < 1000
+      if distance(spot.latitude, spot.longitude, main_spot.latitude, main_spot.longitude) < 1
         sub_spots.push(spot)
       end
     end
